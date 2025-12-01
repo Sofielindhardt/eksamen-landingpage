@@ -398,7 +398,8 @@ body {
 
 /* zoom effekt på billeder i insta sektion */
 
-.insta-section .zoom-img {
+.insta-section .zoom-img,
+.hero-speaker .zoom-img {
   transform: scale(1);
   transition: transform 0.3s ease;
   transform-origin: center;
@@ -407,4 +408,8 @@ body {
 
 .insta-section .zoom-img.hover-zoom {
   transform: scale(1.05);
+}
+
+.hero-speaker .zoom-img.hover-zoom {
+  transform: scale(1.15);
 }
