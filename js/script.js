@@ -15,6 +15,17 @@ zoomImages.forEach((img) => {
     });
 });
 
+const button = document.querySelector(".btn");
+
+if (button) {
+    button.addEventListener("mouseover", () => {
+        button.classList.add("hover-zoom");
+    });
+
+    button.addEventListener("mouseout", () => {
+        button.classList.remove("hover-zoom");
+    });
+}
  
 
 

@@ -84,6 +84,7 @@ body {
 .heart {
   height: auto;
   width: 50px;
+  margin-bottom: 8px;
 }
 
 .nav-actions {
@@ -140,7 +141,7 @@ body {
 }
 
 .btn:hover {
-  background-color: var(--third-color);
+background-color: var(--third-color);
 }
 
 /* Headline og tekst */
@@ -411,5 +412,10 @@ body {
 }
 
 .hero-speaker .zoom-img.hover-zoom {
-  transform: scale(1.15);
+  transform: scale(1.09);
 }
+
+.btn .hover-zoom {
+  transform: scale(1.02);
+  cursor: pointer;
+}   
