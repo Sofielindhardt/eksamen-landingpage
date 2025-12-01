@@ -17,7 +17,7 @@
   --primary-color: white;
   --secondary-color: #683f21;
   --third-color: #884c59;
-  --fourth-color: #faf5ed;
+  --fourth-color: #b38888;
 }
 
 body {
@@ -236,6 +236,7 @@ body {
 }
 
 .egenskaber-tekst {
+    color: var(--primary-color);
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -285,35 +286,47 @@ body {
   ----------------------------------- STYLING AF COSTUMERS --------------------------------------
   ------------------------------------------------------------------------------------------------ */
 
+
 .customers h2 {
   text-align: center;
   font-size: var(--font-size-large);
-  margin-top: 80px;
-  margin-bottom: 40px;
+  margin-top: 100px;
+  margin-bottom: 80px;
 }
 
-.review {
+.reviews {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
   justify-content: center;
+  align-items: stretch;
+  margin: 0 auto;
+
 }
 
 .review-card {
-  flex: 0 0 45%;
+  flex: 0 0 35%;
   font-size: var(--font-size-small);
   font-style: italic;
+  text-align: center;
+  line-height: 1.6;
 }
 
 .review-card img {
   height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  width: auto;
+  height: 50px;
+  
 }
 
 .customer-name {
   font-size: var(--font-size-small);
-  margin-top: 10px;
+  margin-top: 20px;
   font-style: normal;
+  font-weight: bold;
+
 }
+
 
 /* -----------------------------------------------------------------------------------------------
   ----------------------------------- STYLING AF FOOTER -----------------------------------------
@@ -323,7 +336,7 @@ body {
   background-color: var(--third-color);
   color: var(--primary-color);
   margin-top: 150px;
-  padding: 70px 40px;
+  padding: 150px 40px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1.2fr;
   gap: 2rem;
@@ -331,9 +344,9 @@ body {
 
 /* Nydhedsbrev */
 
-.nydhedsbrev h6 {
+.nyhedsbrev h6 {
   font-size: var(--font-size-small);
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .mailbox {
@@ -353,8 +366,8 @@ body {
   color: var(--primary-color);
   border: none;
   border-radius: 20px;
-  padding: 10px 20px;
-  font-size: var(--font-size-small);
+  padding: 10px 10px;
+  font-size: var(--font-size-x-small);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -364,7 +377,7 @@ body {
 .support p,
 .info p {
   font-size: var(--font-size-small);
-  margin: 4px 0;
+  margin: 8px 0;
 }
 
 #social-media h4 {
