@@ -228,9 +228,10 @@ body {
 .egenskaber-billede {
   background-color: var(--fourth-color);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   gap: 2rem;
-  margin-top: 50px;
+  margin-top: 80px;
   padding: 40px;
 }
 
@@ -241,7 +242,7 @@ body {
   z-index: 2;
   width: 2px;
   height: auto;
-  top: 218%;
+  top: 250%;
   left: 73%;
 }
 
@@ -249,7 +250,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 60px;
+  gap: 30px;
   text-align: center;
 }
 
