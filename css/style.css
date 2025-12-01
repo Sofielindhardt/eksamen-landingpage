@@ -392,16 +392,19 @@ body {
   height: auto;
 }
 
-/*animationer */
+/*--------------------------------------------------------------------------------
+-----------------------------------animationer------------------------------------
+----------------------------------------------------------------------------------*/
 
-@keyframes scaleUp {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+/* zoom effekt på billeder i insta sektion */
+
+.insta-section .zoom-img {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  cursor: pointer;
+}
+
+.insta-section .zoom-img.hover-zoom {
+  transform: scale(1.05);
 }
