@@ -1,8 +1,7 @@
 "use strict";
 
 // Hent alle billeder i insta sektionen'
-const zoomImages = document.querySelectorAll(".zoom-img"
-);
+const zoomImages = document.querySelectorAll(".zoom-img");
 
 // Tilføj event listeners til hvert billede
 zoomImages.forEach((img) => {
@@ -26,6 +25,8 @@ if (button) {
         button.classList.remove("hover-zoom");
     });
 }
+
+//
  
 
 
