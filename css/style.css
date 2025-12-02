@@ -1,4 +1,3 @@
-
 /* -----------------------------------------------------------------------------------------------
   ----------------------------------- Reset styling ----------------------------------------------
   ------------------------------------------------------------------------------------------------ */
@@ -35,11 +34,10 @@ body {
   color: var(--secondary-color);
   line-height: 1.4;
 }
- 
+
 /* -----------------------------------------------------------------------------------------------
   ----------------------------------- STYLING AF NAVBAR ------------------------------------------
   ------------------------------------------------------------------------------------------------ */
-
 
 /* Container til navbar */
 .container {
@@ -54,7 +52,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
 
 /* Logo */
 .logo {
@@ -76,7 +73,6 @@ body {
   gap: 50px;
   font-size: var(--font-size-small);
 }
-
 
 /* Dropdown links */
 .dropdown li a {
@@ -160,7 +156,7 @@ body {
 
 /* Knap hover effekt */
 .btn:hover {
-background-color: var(--third-color);
+  background-color: var(--third-color);
 }
 
 /* Headline */
@@ -206,7 +202,6 @@ background-color: var(--third-color);
   ----------------------------------- STYLING AF PRODUKTER --------------------------------------
   ------------------------------------------------------------------------------------------------ */
 
-
 /* Giver luft */
 .products {
   margin-top: 60px;
@@ -250,8 +245,7 @@ background-color: var(--third-color);
   ----------------------------------- STYLING AF EGENSKABER---------------------------------------
   ------------------------------------------------------------------------------------------------ */
 
-
-  /* Egenskaber billede */
+/* Egenskaber billede */
 .egenskaber-billede {
   background-color: var(--fourth-color);
   display: grid;
@@ -261,7 +255,6 @@ background-color: var(--third-color);
   margin-top: 80px;
   padding: 60px 80px;
 }
-
 
 /* Egenskaber tekst */
 .egenskaber-tekst {
@@ -275,7 +268,6 @@ background-color: var(--third-color);
   left: 73%;
 }
 
-
 /* Placerer ikoner */
 .features-icons {
   display: flex;
@@ -285,7 +277,6 @@ background-color: var(--third-color);
   align-items: flex-start;
 }
 
-
 /* ikoner og tekst side om side */
 .feature {
   display: flex;
@@ -294,14 +285,12 @@ background-color: var(--third-color);
   margin-top: 75px;
 }
 
-
 /* ikon størrelse */
 .feature img {
   height: auto;
   width: 60px;
   margin-bottom: 10px;
 }
-
 
 /* tekst størrelse */
 .feature p {
@@ -312,7 +301,6 @@ background-color: var(--third-color);
   ----------------------------------- STYLING AF INSTA SEKTION -----------------------------------
   ------------------------------------------------------------------------------------------------ */
 
- 
 .insta-section {
   display: flex;
   justify-content: space-around;
@@ -320,7 +308,7 @@ background-color: var(--third-color);
   margin-top: 50px;
 }
 
- /* billeder i insta sektion */
+/* billeder i insta sektion */
 .insta-section img {
   width: 100%;
   height: 535px;
@@ -377,7 +365,7 @@ background-color: var(--third-color);
   ----------------------------------- STYLING AF FOOTER -----------------------------------------
   ------------------------------------------------------------------------------------------------ */
 
-  /* kolonner i footer */
+/* kolonner i footer */
 #footer-section {
   background-color: var(--third-color);
   color: var(--primary-color);
@@ -394,7 +382,6 @@ background-color: var(--third-color);
   margin-bottom: 50px;
 }
 
-
 /* input felt i nyhedsbrev */
 .mailbox {
   display: flex;
@@ -408,7 +395,6 @@ background-color: var(--third-color);
   border-radius: 20px;
   font-size: var(--font-size-small);
 }
-
 
 /* tekst størrelse i footer */
 .support p,
@@ -437,9 +423,6 @@ background-color: var(--third-color);
   height: auto;
 }
 
-
-
-
 /*--------------------------------------------------------------------------------
 -----------------------------------animationer------------------------------------
 ----------------------------------------------------------------------------------*/
@@ -452,35 +435,31 @@ background-color: var(--third-color);
   transition: transform 0.3s ease;
 }
 
-
 /* Zoom effekter for forskellige sektioner */
 .insta-section .zoom-img.hover-zoom {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .hero-speaker .zoom-img.hover-zoom {
-    transform: scale(1.09);
+  transform: scale(1.09);
 }
 
 .product-card .zoom-img.hover-zoom {
-    transform: scale(1.04);
+  transform: scale(1.04);
 }
 
 /* CTA knap zoom effekt */
 .btn.hover-zoom {
-    transform: translate(-50%, -50%) scale(1.1);
-    cursor: pointer;
+  transform: translate(-50%, -50%) scale(1.1);
+  cursor: pointer;
 }
 
 /* Pil footer */
 .til-toppen {
-  grid-column: 4;
-  text-align: right;
-  align-items: end;
-
+  text-align: center;
+  margin-top: 80px;
 }
 
-/* Pil stil */
 .back-to-top {
   display: inline-block;
   color: var(--primary-color);
@@ -499,8 +478,3 @@ background-color: var(--third-color);
 html {
   scroll-behavior: smooth;
 }
-
-
-
-
-
