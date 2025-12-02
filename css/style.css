@@ -410,9 +410,14 @@ background-color: var(--third-color);
   transform: scale(1.05);
 }
 
+/* zoom effekt på hero speaker */
+
 .hero-speaker .zoom-img.hover-zoom {
   transform: scale(1.09);
 }
+
+
+/* zoom effekt på produkt billeder*/
 
 .product-card .zoom-img {
   transform: scale(1);
@@ -423,6 +428,8 @@ background-color: var(--third-color);
 .product-card .zoom-img.hover-zoom {
   transform: scale(1.04);
 }
+
+/* zoom effekt på CTA knap */
 
 .btn.hover-zoom {
   transform: translate(-50%, -50%) scale(1.1);
