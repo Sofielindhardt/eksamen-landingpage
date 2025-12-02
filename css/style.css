@@ -437,6 +437,9 @@ background-color: var(--third-color);
   height: auto;
 }
 
+
+
+
 /*--------------------------------------------------------------------------------
 -----------------------------------animationer------------------------------------
 ----------------------------------------------------------------------------------*/
@@ -469,6 +472,33 @@ background-color: var(--third-color);
     cursor: pointer;
 }
 
+/* Pil footer */
+.til-toppen {
+  grid-column: 4;
+  text-align: right;
+  align-items: end;
+
+}
+
+/* Pil stil */
+.back-to-top {
+  display: inline-block;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: var(--font-size-large);
+  transition: all 0.3s ease;
+}
+
+/* Pil hover effekt */
+.back-to-top:hover {
+  color: var(--fourth-color);
+  transform: scale(1.1);
+}
+
+/* Smooth scroll til toppen */
+html {
+  scroll-behavior: smooth;
+}
 
 
 
