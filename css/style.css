@@ -1,8 +1,16 @@
+
+/* -----------------------------------------------------------------------------------------------
+  ----------------------------------- Reset styling ----------------------------------------------
+  ------------------------------------------------------------------------------------------------ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* -----------------------------------------------------------------------------------------------
+  ----------------------------------- Root variables ---------------------------------------------
+  ------------------------------------------------------------------------------------------------ */
 
 :root {
   /*Typografi*/
@@ -11,7 +19,6 @@
   --font-size-medium: 25px;
   --font-size-large: 48px;
   --font-size-xl: 68px;
-  --font-size-hero-mobile: 2.5rem;
 
   /*farver*/
   --primary-color: white;
@@ -19,6 +26,8 @@
   --third-color: #884c59;
   --fourth-color: #b38888;
 }
+
+/* Ændrer farve, tekst mm. på hele siden */
 
 body {
   font-family: "DM Sans", sans-serif;
@@ -31,51 +40,58 @@ body {
   ----------------------------------- STYLING AF NAVBAR ------------------------------------------
   ------------------------------------------------------------------------------------------------ */
 
-/* navbar */
 
+/* Container til navbar */
 .container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
 
+/* Navbar */
 #navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+
+/* Logo */
 .logo {
   width: 200px;
   height: auto;
 }
 
+/* Højre del af navbar */
 #right-navbar {
   display: flex;
   align-items: center;
   gap: 50px;
 }
 
+/* Dropdown menu */
 .dropdown {
   list-style: none;
   display: flex;
   gap: 50px;
   font-size: var(--font-size-small);
 }
+
+
+/* Dropdown links */
 .dropdown li a {
   color: var(--secondary-color);
   text-decoration: none;
   padding: 10px 15px;
   display: block;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
+/* underline ved hover */
 .dropdown li a:hover {
   text-decoration: underline;
 }
 
 /* ikoner + søgning  */
-
 .kurv {
   height: auto;
   width: 50px;
@@ -107,12 +123,14 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Hero billede */
 .hero img.hero-image {
   width: 100%;
   height: auto;
   display: block;
 }
 
+/* Gradient over hero billede */
 .hero::after {
   content: "";
   position: absolute;
@@ -140,12 +158,12 @@ body {
   transition: all 0.3s ease;
 }
 
+/* Knap hover effekt */
 .btn:hover {
 background-color: var(--third-color);
 }
 
-/* Headline og tekst */
-
+/* Headline */
 .headline {
   position: absolute;
   top: 30%;
@@ -158,6 +176,7 @@ background-color: var(--third-color);
   text-align: center;
 }
 
+/* Hero tekst */
 .hero-text {
   font-size: var(--font-size-small);
   color: var(--primary-color);
@@ -171,7 +190,6 @@ background-color: var(--third-color);
 }
 
 /* Hero speaker */
-
 .hero-speaker {
   position: absolute;
   right: 70%;
@@ -188,15 +206,19 @@ background-color: var(--third-color);
   ----------------------------------- STYLING AF PRODUKTER --------------------------------------
   ------------------------------------------------------------------------------------------------ */
 
+
+/* Giver luft */
 .products {
   margin-top: 60px;
 }
 
+/* Produkter overskrift */
 .products h2 {
   font-size: var(--font-size-large);
   margin-bottom: 30px;
 }
 
+/* Produkt grid */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -204,6 +226,7 @@ background-color: var(--third-color);
   text-align: center;
 }
 
+/* Produkt billeder */
 .product-card img {
   max-width: 100%;
   height: 525px;
@@ -211,6 +234,7 @@ background-color: var(--third-color);
   margin-bottom: 10px;
 }
 
+/* Produkt navn og pris */
 .product-name {
   font-size: var(--font-size-small);
   margin: 10px;
@@ -226,6 +250,8 @@ background-color: var(--third-color);
   ----------------------------------- STYLING AF EGENSKABER---------------------------------------
   ------------------------------------------------------------------------------------------------ */
 
+
+  /* Egenskaber billede */
 .egenskaber-billede {
   background-color: var(--fourth-color);
   display: grid;
@@ -236,18 +262,21 @@ background-color: var(--third-color);
   padding: 60px 80px;
 }
 
+
+/* Egenskaber tekst */
 .egenskaber-tekst {
   color: var(--primary-color);
   display: flex;
   flex-direction: column;
   position: absolute;
   z-index: 2;
-  width: 2px;
   height: auto;
   top: 250%;
   left: 73%;
 }
 
+
+/* Placerer ikoner */
 .features-icons {
   display: flex;
   justify-content: center;
@@ -256,6 +285,8 @@ background-color: var(--third-color);
   align-items: flex-start;
 }
 
+
+/* ikoner og tekst side om side */
 .feature {
   display: flex;
   align-items: center;
@@ -264,12 +295,15 @@ background-color: var(--third-color);
 }
 
 
+/* ikon størrelse */
 .feature img {
   height: auto;
   width: 60px;
   margin-bottom: 10px;
 }
 
+
+/* tekst størrelse */
 .feature p {
   font-size: var(--font-size-small);
 }
@@ -278,6 +312,7 @@ background-color: var(--third-color);
   ----------------------------------- STYLING AF INSTA SEKTION -----------------------------------
   ------------------------------------------------------------------------------------------------ */
 
+ 
 .insta-section {
   display: flex;
   justify-content: space-around;
@@ -285,6 +320,7 @@ background-color: var(--third-color);
   margin-top: 50px;
 }
 
+ /* billeder i insta sektion */
 .insta-section img {
   width: 100%;
   height: 535px;
@@ -295,6 +331,7 @@ background-color: var(--third-color);
   ----------------------------------- STYLING AF COSTUMERS --------------------------------------
   ------------------------------------------------------------------------------------------------ */
 
+/* Overskrift */
 .customers h2 {
   text-align: center;
   font-size: var(--font-size-large);
@@ -302,6 +339,7 @@ background-color: var(--third-color);
   margin-bottom: 80px;
 }
 
+/* anmeldelser */
 .reviews {
   display: flex;
   gap: 4rem;
@@ -310,6 +348,7 @@ background-color: var(--third-color);
   margin: 0 auto;
 }
 
+/* anmeldelse tekst */
 .review-card {
   flex: 0 0 35%;
   font-size: var(--font-size-small);
@@ -318,6 +357,7 @@ background-color: var(--third-color);
   line-height: 1.6;
 }
 
+/* Rating */
 .review-card img {
   height: 30px;
   margin-bottom: 15px;
@@ -325,6 +365,7 @@ background-color: var(--third-color);
   height: 50px;
 }
 
+/* Kunde navn */
 .customer-name {
   font-size: var(--font-size-small);
   margin-top: 20px;
@@ -336,6 +377,7 @@ background-color: var(--third-color);
   ----------------------------------- STYLING AF FOOTER -----------------------------------------
   ------------------------------------------------------------------------------------------------ */
 
+  /* kolonner i footer */
 #footer-section {
   background-color: var(--third-color);
   color: var(--primary-color);
@@ -347,17 +389,19 @@ background-color: var(--third-color);
 }
 
 /* Nydhedsbrev */
-
 .nyhedsbrev h6 {
   font-size: var(--font-size-small);
   margin-bottom: 50px;
 }
 
+
+/* input felt i nyhedsbrev */
 .mailbox {
   display: flex;
   gap: 10px;
   margin-top: 10px;
 }
+
 .mailbox input {
   flex: 1;
   padding: 5px;
@@ -366,18 +410,19 @@ background-color: var(--third-color);
 }
 
 
-/* Footer kolonner */
-
+/* tekst størrelse i footer */
 .support p,
 .info p {
   font-size: var(--font-size-small);
   margin: 8px 0;
 }
 
+/* social media sektion */
 #social-media h4 {
   margin-bottom: 8px;
 }
 
+/* ikoner og tekst i footer */
 .social-icons {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -385,6 +430,7 @@ background-color: var(--third-color);
   gap: 6px 10px;
 }
 
+/* social media ikoner størrelse */
 .instagram,
 .tiktok {
   width: 50px;
