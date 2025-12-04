@@ -440,9 +440,6 @@ body {
   transform: scale(1.05);
 }
 
-.hero-speaker .zoom-img.hover-zoom {
-  transform: scale(1.09);
-}
 
 .product-card .zoom-img.hover-zoom {
   transform: scale(1.04);
